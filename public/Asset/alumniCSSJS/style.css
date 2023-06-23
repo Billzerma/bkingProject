@@ -251,3 +251,18 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
+
+@media screen and (max-width:770px){
+    .carousel-desk{
+        display: none;
+    }
+    .wrap-title h{
+        position: absolute;
+        z-index: 99;
+    }
+}
+@media screen and (min-width:770px){
+    .carousel-mobile{
+        display: none;
+    }
+}
