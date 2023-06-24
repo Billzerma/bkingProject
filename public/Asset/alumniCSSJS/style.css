@@ -5,6 +5,7 @@
 }
 
 
+
 /*CSS Header.php*/
 
 .navH{
@@ -58,192 +59,15 @@
 
 
 
-/*CSS Landing.php*/
-
-.alterBody{
-    padding: 0px 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #fff;
-    margin-left: 12px;
-    margin-top: 200px;
-    padding-bottom: 300px;
-}
-
-.wrapper{
-
-    max-width: 1200px;
-    position: relative;
-}
-
-.wrapper .caraosel{
-    font-size: 0px;
-    cursor: pointer;
-    white-space: nowrap;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-.caraosel.dragging{
-    scroll-behavior: smooth;
-    cursor: grab;
-}
-.caraosel.dragging img{
-    pointer-events: none;
-}
-.caraosel img{
-    height: 340px;
-    margin-left: 14px;
-    object-fit: cover;
-    width: calc(100%/3);
-}
-
-.caraosel img:first-child{
-    margin-left: 0px;
-}
-
-@media  screen and (max-width: 700px) {
-    .caraosel img{
-        width: calc(100%/2);
-    }
-}
-
-@media  screen and (max-width: 550px) {
-    .caraosel img{
-        width: 100%;
-    }
-}
-
-.wrapper i{
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 46px;
-    background: lightgray;
-    border-radius: 50%;
-    position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
-}
-
-.wrapper i:first-child{
-    left: -10px;
-    display: none;
-}
-
-.wrapper i:last-child{
-    right: -23px;
-}
-
-.container{
-    position: relative;
-    margin-top: 10px;
-    max-width: 1200px;
-    margin-left: 190px;
-    margin-top: 30px;
-}
-
-.galeri{
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: black;
-}
-
-.galeri span{
-    color: blue;
-    
-}
-
-.possSign{
-    margin-left: -20px;
-}
-
-.sizeCorousel{
-    width: 770px;
-    height: 540px;
-}
-.judulCorousel{
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.judulUtama{
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    margin-top: 10px;
-    color: blue;
-}
-
-.beritaAlumni{
-    margin-left: 170px;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: black;
-}
 
 
-.beritaAlumni span{
-    color: blue;
-}
-
-
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 90px;
-    margin-right: 55px;
-    
-}
-
-.card {
-    width: calc(33.33% - 20px);
-    margin: 0 10px 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-container {
-    padding: 30px;
-    text-align: center;
-}
-
-.table-responsive {
-    margin: 0 20px;
-}
-
-
-.tabel{
-    margin-top: 20px;
-    margin-left: 600px;
-}
-
-/*END CSS landing.php*/
 
 .ftmar{
     margin-top: 75%;
 }
 
 .c-item{
-    height: 640px;
+    height: 490px;
     
 }
 .c-img{
@@ -265,4 +89,225 @@
     .carousel-mobile{
         display: none;
     }
+}
+.slide-container{
+  
+    max-width: 1460px;
+    width: 100%;
+    background-color: #efefef;
+    padding: 30px 0 30px 0;
+   
+   
+}
+.card-images{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+    
+
+}
+
+.card-images .card-im{
+    height: 100%;
+    width: 100%;
+   
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 4px #4070fa;
+}
+
+.slider{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    margin: 20px 50px 0 50px;
+    border-radius: 40px;
+    
+    
+}
+.crd{
+    border-radius: 25px;
+    background-color: #fff;
+    width: 320px;
+    margin: 0 0 0 13px;
+   
+   
+}
+.image-content,
+.crd-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+   
+    
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0px;
+}
+
+.slide-content{
+    margin: 0px 40px;
+}
+
+.nama{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.des-content{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.booking-button-slider{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070fa;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.booking-button-slider:hover{
+    background-color: #265df2;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #4070fa;
+    top: 0;
+    left: 0;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,.overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070fa;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.landHome{
+    background-color: #fff;
+}
+
+.subtitle-home{
+    margin: 20px 0 20px 50px;
+
+}
+
+.kat{
+    text-align: center;
+    height: 40px;
+    width: 300px;
+   
+    margin: 10px 20px 10px 10px;
+   
+    
+}
+.row{
+    justify-content: center;
+    margin: 40px 0 30px 0;
+    background-color: #efefef;
+    margin: 20px 50px 0 50px;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+
+}
+
+.subtitle-home{
+    padding:30px 10px 0px 40px ;
+    margin: 0 50px 20px 50px;
+    
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+.ik{
+    margin: 0 0 0 10px;
+}
+
+.link-kat{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #333;
+
+}
+
+@media screen and(max-width :700px) {
+    .row{
+        justify-content: left;
+    }
+    
+}
+
+.colm-photo1{
+    margin: 0;
+    padding: 0;
+    height: 450px;
+}
+.colm-photo2{
+    
+    margin: 0;
+    padding: 0;
+   height: 300px;
+}
+.colm-photo3{
+    
+    margin: 0;
+    padding: 0;
+   height: 300px;
+}
+.text-galeri{
+    
+    margin: 0;
+    padding: 0;
+   height: 200px;
+   width: 683px;
+   margin-left: 685px;
+   margin-top: -200px;   
+   background-color: #265df2;
+}
+
+
+.r-photo{
+    
+    border-radius: 0px;
+}
+.galeri-home{
+    height: 100%;
+    object-fit: cover;
+   
+}
+.dis-elem{
+    background-color: #efefef;
+    margin: 20px 50px 0 50px;
+}
+.elemt{
+    display: inline-block;
+    padding: 20px;
+
 }

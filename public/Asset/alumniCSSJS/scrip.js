@@ -1,52 +1,61 @@
-//strat js landing.php
+//strat js home.php
+// var swiper = new Swiper(".slide-content", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
 
-const caraosel = document.querySelector(".caraosel");
-const arrowIcon = document.querySelectorAll(".wrapper i");
-const firstImg = caraosel.querySelectorAll("img")[0];
-let isDragStart=false, prevPageX,prevScrollLeft;
-let firstImgWid=firstImg.clientWidth+14;
+// var swiper = new Swiper(".slide-container", {
+//     slidesPerView: 3,
+//     spaceBetween: 30,
+//     freeMode: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+
+// var swiper = new Swiper(".slide-content", {
+//     watchSlidesProgress: true,
+//     slidesPerView: 3,
+//   });
+
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    },
+  });
 
 
-const showHideIcon=()=>{
-    let scrollWidth=caraosel.scrollWidth-caraosel.clientWidth;
-    arrowIcon[0].style.display=caraosel.scrollLeft == 0? "none":"block";
-    arrowIcon[1].style.display=caraosel.scrollLeft == scrollWidth? "none":"block";
-}
-arrowIcon.forEach(icon =>{
- 
-    icon.addEventListener("click",()=>{
-        let firstImgWid=firstImg.clientWidth+14;
-       caraosel.scrollLeft += icon.id == "left" ? -firstImgWid:firstImgWid;
-       setTimeout(() => showHideIcon(), 60);
-    });
-});
-
-const dragStart =(e) =>{
-    isDragStart=true;
-    prevPageX=e.pageX;
-    prevScrollLeft=caraosel.scrollLeft;
-}
-
-const dragging =(e) =>{
-    if(!isDragStart) return;
-    e.preventDefault();
-    let posstionDiff=e.pageX-prevPageX;
-    caraosel.classList.add("dragging");
-    caraosel.scrollLeft=prevScrollLeft-posstionDiff;
-    showHideIcon();
-}
-
-const dragStop =() =>{
-    isDragStart=false;
-    
-    caraosel.classList.remove("dragging");
-}
-
-caraosel.addEventListener("mousedown", dragStart);
-caraosel.addEventListener("mousemove", dragging);
-caraosel.addEventListener("mouseup", dragStop);
-caraosel.addEventListener("mouseleave", dragStop);
-
-// end landing php
+// end home php
 
 // start login.php
