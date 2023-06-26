@@ -266,7 +266,7 @@
 </div>
 
 <div class="pilih-kota">
-  <h2 class="subtitle-home">Pilih Sesuai Kota Mu</h2>
+  <h2 class="subtitle-home">Pilih Sesuai Kota Mu ya</h2>
     <div class="dis-elem">
         <div class="elemt">
             <h2>Malang</h2>
