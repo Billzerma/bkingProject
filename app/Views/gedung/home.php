@@ -11,7 +11,8 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active c-item">
-      <img src="Asset\alumniCSSJS\gambar\carousel\sport.jpg" class="d-block w-100 c-img" alt="...">
+    
+      <img src="<?= base_url('Asset\alumniCSSJS\gambar\carousel\sport.jpg');?>" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption d-none d-md-block top-0 mt-4 bann">
         <p class="mt-5 fs-3 text-uppercase tagline">Serukan Kemenanganmu</p>
         <h1 class="display-1 fw-bolder text-capitalize title-line">Sport Hall</h1>
@@ -19,7 +20,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="Asset\alumniCSSJS\gambar\carousel\weeding.jpg" class="d-block w-100 c-img" alt="...">
+      <img src="<?= base_url('Asset\alumniCSSJS\gambar\carousel\weeding.jpg');?>" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption d-none d-md-block top-0 mt-4 bann">
         <p class="mt-5 fs-3 text-uppercase tagline">Sempurnakan Hari Spesial Mu</p>
         <h1 class="display-1 fw-bolder text-capitalize title-line">Gedung Pernikahan</h1>
@@ -27,7 +28,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="Asset\alumniCSSJS\gambar\carousel\serbaguna.jpg" class="d-block w-100 c-img" alt="...">
+      <img src="<?= base_url('Asset\alumniCSSJS\gambar\carousel\serbaguna.jpg');?>" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption d-none d-md-block top-0 mt-4 bann">
         <p class="mt-5 fs-3 text-uppercase tagline">Lebih Efisien</p>
         <h1 class="display-1 fw-bolder text-capitalize title-line">Gedung Serba Guna</h1>
@@ -35,7 +36,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="Asset\alumniCSSJS\gambar\carousel\meeting.jpg" class="d-block w-100 c-img" alt="...">
+      <img src="<?= base_url('Asset\alumniCSSJS\gambar\carousel\meeting.jpg');?>" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption d-none d-md-block top-0 mt-4 bann">
         <p class="mt-5 fs-3 text-uppercase tagline">Perluas Ide-Ide Mu</p>
         <h1 class="display-1 fw-bolder text-capitalize title-line">Gedung Pertemuan</h1>
@@ -97,24 +98,7 @@
   </button>
 </div>
 
-<div class="landHome">
-  <div class="container-kategori">
-    <h3 class="subtitle-home">Ketegori<i class="fa-solid fa-list-ul ik"></i></h3>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 col-xl-3 kat">
-        <a href="" class="link-kat">Gedung Olahraga <i class="fa-solid fa-basketball fa-lg ik"></i> </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-3 kat">
-        <a href="" class="link-kat">Gedung Pernikahan <i class="fa-solid fa-ring fa-lg ik"></i></a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-3 kat">
-         <a href="" class="link-kat">Gedung Pertemuan <i class="fa-regular fa-handshake fa-lg ik"></i></a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-3 kat">
-        <a href="" class="link-kat">Gedung Serba guna <i class="fa-solid fa-building-wheat fa-lg ik"></i></a>
-      </div>
-    </div>
-  </div>
+
 
 
 
@@ -139,7 +123,7 @@
             <h2 class="nama">Gedung Serba Guna</h2>
             <p class="des-content">Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores eos necessitatibus adipisci dolor totam sunt pariatur dolorum illum dolore earum, hic consequatur a ipsa non quam quos eveniet eum! Nobis.sit amet consectetur
                adipisicing elit. Corporis </p>
-               <button class="booking-button-slider">Booking</button>
+               <a href="<?= base_url('pilihGedung') ?> " class="btn btn-success">Booking</a>
           </div>
 
         </div>
@@ -156,7 +140,7 @@
             <h2 class="nama">Gedung Serba Guna</h2>
             <p class="des-content">Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores eos necessitatibus adipisci dolor totam sunt pariatur dolorum illum dolore earum, hic consequatur a ipsa non quam quos eveniet eum! Nobis.sit amet consectetur
                adipisicing elit. Corporis </p>
-               <button class="booking-button-slider">Booking</button>
+               <a href="<?= base_url('pilihGedung') ?> " class="btn btn-success">Booking</a>
           </div>
 
         </div>
@@ -174,7 +158,7 @@
             <h2 class="nama">Gedung Serba Guna</h2>
             <p class="des-content">Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores eos necessitatibus adipisci dolor totam sunt pariatur dolorum illum dolore earum, hic consequatur a ipsa non quam quos eveniet eum! Nobis.sit amet consectetur
                adipisicing elit. Corporis </p>
-               <button class="booking-button-slider">Booking</button>
+               <a href="<?= base_url('pilihGedung') ?> " class="btn btn-success">Booking</a>
           </div>
 
         </div>
@@ -192,7 +176,7 @@
             <h2 class="nama">Gedung Serba Guna</h2>
             <p class="des-content">Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores eos necessitatibus adipisci dolor totam sunt pariatur dolorum illum dolore earum, hic consequatur a ipsa non quam quos eveniet eum! Nobis.sit amet consectetur
                adipisicing elit. Corporis </p>
-               <button class="booking-button-slider">Booking</button>
+               <a href="<?= base_url('pilihGedung') ?> " class="btn btn-success">Booking</a>
           </div>
 
         </div>
@@ -256,44 +240,13 @@
   </div>
 </div>
 
-<div class="text-galeri">
-  <h2>YOOOO</h2>
-</div>
 
 
 </div>
 </div>
 </div>
 
-<div class="pilih-kota">
-  <h2 class="subtitle-home">Pilih Sesuai Kota Mu ya</h2>
-    <div class="dis-elem">
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-       <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
-        <div class="elemt">
-            <h2>Malang</h2>
-        </div>
 
-    </div>
 
   
 </div>

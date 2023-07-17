@@ -82,7 +82,7 @@ class Auth extends BaseConfig
     //     'emailActivation' => 'Myth\Auth\Views\emails\activation',
     // ];
     public $views = [
-        'login'           => 'App\Views\gedung\loginBking',
+        'login'           => 'App\Views\gedung\login',
         'register'        => 'App\Views\gedung\registerBking',
         'forgot'          => 'Myth\Auth\Views\forgot',
         'reset'           => 'Myth\Auth\Views\reset',
@@ -109,7 +109,7 @@ class Auth extends BaseConfig
      * @var string[]
      */
     public $validFields = [
-        'email','username',
+        'email','username'
         
     ];
 
@@ -223,7 +223,7 @@ class Auth extends BaseConfig
      *
      * @var bool
      */
-    public $allowRemembering = false;
+    public $allowRemembering = true;
 
     /**
      * --------------------------------------------------------------------

@@ -1,0 +1,14 @@
+__ci_last_regenerate|i:1689275795;_ci_previous_url|s:47:"http://localhost:8080/index.php/tambah%20gedung";err|s:422:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>gedung nama gedung mohon diisi</li>
+					<li>jenis_gedung mohon diisi</li>
+					<li>alamat mohon diisi</li>
+					<li>luas_gedung mohon diisi</li>
+					<li>harga_sewa mohon diisi</li>
+					<li>deskripsi mohon diisi</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:3:"err";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:8:{s:14:"csrf_test_name";s:32:"981fc01d2de343186adbf51b46e3e4db";s:6:"gedung";s:0:"";s:12:"jenis_gedung";s:0:"";s:6:"alamat";s:0:"";s:11:"luas_gedung";s:0:"";s:10:"harga_sewa";s:0:"";s:9:"deskripsi";s:0:"";s:6:"sampul";s:0:"";}}_ci_validation_errors|a:6:{s:6:"gedung";s:30:"gedung nama gedung mohon diisi";s:12:"jenis_gedung";s:24:"jenis_gedung mohon diisi";s:6:"alamat";s:18:"alamat mohon diisi";s:11:"luas_gedung";s:23:"luas_gedung mohon diisi";s:10:"harga_sewa";s:22:"harga_sewa mohon diisi";s:9:"deskripsi";s:21:"deskripsi mohon diisi";}

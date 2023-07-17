@@ -1,0 +1,227 @@
+ERROR - 2023-07-12 12:57:11 --> mysqli_sql_exception: Unknown table 'bkingdb.barang' in C:\Users\Nabil\Documents\project ci\bking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Nabil\Documents\project ci\bking\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `Bar...', 0)
+#1 C:\Users\Nabil\Documents\project ci\bking\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `Bar...')
+#2 C:\Users\Nabil\Documents\project ci\bking\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `Bar...')
+#3 C:\Users\Nabil\Documents\project ci\bking\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `Bar...')
+#4 C:\Users\Nabil\Documents\project ci\bking\app\Database\Migrations\2023-04-17-121329_Barang.php(38): CodeIgniter\Database\Forge->dropTable('Barang')
+#5 C:\Users\Nabil\Documents\project ci\bking\system\Database\MigrationRunner.php(877): App\Database\Migrations\Barang->down()
+#6 C:\Users\Nabil\Documents\project ci\bking\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\Nabil\Documents\project ci\bking\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\Nabil\Documents\project ci\bking\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\Nabil\Documents\project ci\bking\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\Nabil\Documents\project ci\bking\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\Nabil\Documents\project ci\bking\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\Nabil\Documents\project ci\bking\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\Nabil\Documents\project ci\bking\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+INFO - 2023-07-12 13:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 13:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 13:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 13:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 13:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 13:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 13:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 14:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 14:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 14:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 14:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 15:08:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\admin.php on line 33.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:13:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\admin.php on line 33.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:13:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\admin.php on line 33.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:15:54 --> syntax error, unexpected 'sampul' (T_STRING), expecting ')'
+in APPPATH\Views\gedung\adminPage\admin.php on line 33.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 3 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:17:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\admin.php on line 33.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:19:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\admin.php on line 34.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:19:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\admin.php on line 35.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:30:16 --> Undefined variable: id
+in APPPATH\Controllers\GedungCont.php on line 31.
+ 1 APPPATH\Controllers\GedungCont.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Controllers\\GedungCont.php', 31, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:56:42 --> Too few arguments to function App\Controllers\GedungCont::detail(), 0 passed in C:\Users\Nabil\Documents\project ci\bking\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\GedungCont.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 15:59:50 --> Too few arguments to function App\Controllers\GedungCont::detail(), 0 passed in C:\Users\Nabil\Documents\project ci\bking\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\GedungCont.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 16:06:47 --> syntax error, unexpected 'dd' (T_STRING)
+in APPPATH\Controllers\GedungCont.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\GedungCont.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\GedungCont')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\GedungCont')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\GedungCont')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\GedungCont', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 16:48:24 --> Undefined variable: g
+in APPPATH\Views\gedung\adminPage\detailGedung.php on line 13.
+ 1 APPPATH\Views\gedung\adminPage\detailGedung.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: g', 'APPPATH\\Views\\gedung\\adminPage\\detailGedung.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\detailGedung.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung\\adminPage\\detailGedung', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(104): view('gedung\\adminPage\\detailGedung', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->detail('112')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 17:17:13 --> Undefined index: kategori
+in APPPATH\Views\gedung\adminPage\admin.php on line 37.
+ 1 APPPATH\Views\gedung\adminPage\admin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori', 'APPPATH\\Views\\gedung\\adminPage\\admin.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-12 17:57:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\gedung\adminPage\detailGedung.php on line 13.
+ 1 APPPATH\Views\gedung\adminPage\detailGedung.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\gedung\\adminPage\\detailGedung.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gedung\\adminPage\\detailGedung.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung\\adminPage\\detailGedung', [], true)
+ 5 APPPATH\Controllers\GedungCont.php(118): view('gedung\\adminPage\\detailGedung', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->detail('create')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-12 18:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 18:27:47 --> Allowed fields must be specified for model: "App\Models\gedungModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\gedungModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\GedungCont.php(104): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->save()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-12 18:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 18:42:59 --> Call to undefined method CodeIgniter\Session\Session::etFlashData()
+in APPPATH\Views\gedung\adminPage\admin.php on line 16.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gedung/adminPage/admin', [], true)
+ 4 APPPATH\Controllers\GedungCont.php(37): view('gedung/adminPage/admin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\GedungCont->admin()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GedungCont))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-12 18:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 18:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -144,7 +144,71 @@ class CreateAuthTables extends Migration
         $this->forge->addForeignKey('user_id', 'users', 'id', '', 'CASCADE');
         $this->forge->addForeignKey('permission_id', 'auth_permissions', 'id', '', 'CASCADE');
         $this->forge->createTable('auth_users_permissions', true);
+
+
+
+        // // custom
+        // $fields = [
+        //     'id_gedung'    => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+        //     'nama_gedung'  => ['type' => 'varchar', 'constraint' => 100],
+        //     'kategori'     => ['type' => 'varchar', 'constraint' => 100],
+        //     'alamat'       => ['type' => 'varchar', 'constraint' => 100],
+        //     'luas_gedung'  => ['type' => 'varchar', 'constraint' => 100],
+        //     'harga_sewa'   => ['type' => 'int', 'constraint' => 11],
+        //     'deskripsi'    => ['type' => 'varchar', 'constraint' => 100],
+        //     'sampul'       => ['type' => 'varchar', 'constraint' => 100],
+        //     'id'           => ['type' => 'int', 'constraint' => 11],
+        // ];
+
+        // $this->forge->addField($fields);
+        // $this->forge->addKey('id_gedung', true);
+        // $this->forge->createTable('gedung', true);
+        // $this->forge->addForeignKey('id', 'users', 'id_users', '', 'CASCADE');
+
+
+        // $fields = [
+        //     'id_sewa'        => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+        //     'mulai_sewa'     => ['type' => 'date'],
+        //     'selesai_sewa'   => ['type' => 'date'],
+        //     'pesan'          => ['type' => 'varchar', 'constraint' => 200],
+        //     'id_gedung'      => ['type' => 'int', 'constraint' => 11],
+        //     'id_user_profile'=> ['type' => 'int', 'constraint' => 11],
+        // ];
+
+        // $this->forge->addField($fields);
+        // $this->forge->addKey('id_sewa', true);
+        // $this->forge->addForeignKey('id_gedung', 'gedung', 'id_gedung', '', 'CASCADE');
+        // $this->forge->addForeignKey('id_user_profile', 'user_profile', 'id_user_profile', '', 'CASCADE');
+        // $this->forge->createTable('penyewaan', true);
+
+
+        // $fields = [
+        //     'id_user_profile' => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+        //     'nama'            => ['type' => 'varchar', 'constraint' => 100],
+        //     'alamat'          => ['type' => 'varchar', 'constraint' => 100],
+        //     'phone'           => ['type' => 'varchar', 'constraint' => 100],
+        //     'id'              => ['type' => 'int', 'constraint' => 11],
+        // ];
+
+        // $this->forge->addField($fields);
+        // $this->forge->addKey('id_user_profile', true);
+        // $this->forge->createTable('user_profile', true);
+
+        // // Add relation between User Profile and Users
+        // $this->forge->addForeignKey('id', 'users', 'id_users', '', 'CASCADE');
+        // $this->forge->createTable('user_profile', true);
+
+
+
+
+
+
+
+
     }
+
+
+
 
     //--------------------------------------------------------------------
 

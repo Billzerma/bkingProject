@@ -32,10 +32,25 @@ $routes->set404Override();
 // $routes->get('/', 'Home::Index');
 //$routes->get('/', 'Home::index');
 
-$routes->get('/awal', 'GedungCont::awal');
+$routes->get('/login', 'GedungCont::login');
 
 $routes->get('/signUp', 'GedungCont::signup');
 $routes->get('/home', 'GedungCont::home');
+$routes->get('/admin', 'GedungCont::admin');
+$routes->get('/pilihGedung', 'GedungCont::pilihGedung');
+$routes->get('/booking', 'GedungCont::bookingPage');
+$routes->get('/tambah gedung', 'GedungCont::addGedung');
+$routes->get('/teskat', 'GedungCont::tes');
+$routes->get('/admin/(:num)','GedungCont::detail/$1');
+$routes->get('/admin/edit/(:num)','GedungCont::edit/$1');
+$routes->delete('/admin/(:num)','GedungCont::delete/$1');
+$routes->post('/admin/update/(:num)','GedungCont::update/$1');
+$routes->post('/admin/updatestatus/(:num)','GedungCont::updateStatus/$1');
+$routes->post('admin/save', 'GedungCont::save');
+$routes->post('pemesanan/save', 'GedungCont::saveBooking');
+$routes->get('/pemesananAdmin', 'GedungCont::pesanan');
+$routes->get('/pemesanan/(:num)','GedungCont::detailBooking/$1');
+$routes->get('/detailBooking', 'GedungCont::indetailbooking');
 
 /*
  * --------------------------------------------------------------------

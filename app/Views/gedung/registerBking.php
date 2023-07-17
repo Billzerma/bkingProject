@@ -13,14 +13,7 @@
 </head>
 <body>
 
-<div class="fontDc">
-<h2 class="des5">Daftar Untuk</h2>
-<h2 class="des6">Melanjutkan</h2>
-<h4 class="des7">Layanan Kami!!</h4>
 
-<br>
-
-</div>
 
 <img src="<?=base_url('Asset\alumniCSSJS\gambar\bg\bgGedung.jpg');?>" class="bg-login">
 

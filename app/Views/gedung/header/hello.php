@@ -23,19 +23,29 @@
     <div class="collapse navbar-collapse" id="navbarNav" >
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active mar" aria-current="page" href="<?= base_url('dashboard') ?>"><i class="fa-solid fa-house mar-icon"></i>Home</a>
+          <a class="nav-link active mar" aria-current="page" href="<?= base_url('home') ?>"><i class="fa-solid fa-house mar-icon"></i>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active mar" aria-current="page" href="<?= base_url('dashboard') ?>"><i class="fa-solid fa-house mar-icon"></i>Gedung</a>
+          <a class="nav-link active mar" aria-current="page" href="<?= base_url('pilihGedung') ?>"><i class="fa-solid fa-house mar-icon"></i>Gedung</a>
         </li>
+        <?php if(in_groups("admin")): ?>
+        <li class="nav-item">
+          <a class="nav-link active mar" aria-current="page" href="<?= base_url('admin') ?>"><i class="fa-solid fa-house mar-icon"></i>admin</a>
+        </li>
+        <?php endif;?>
+
+        
        
-        <li class="nav-item ">
-          <a class="nav-link active mar"  href="<?= base_url('carialumni') ?>"><i class="fa-sharp fa-solid fa-circle-exclamation mar-icon"></i>about</a>
-        </li>
+        
+        <?php if(logged_in()):?>
         <li class="nav-item active">
           <a class="nav-link active mar" href="<?= base_url('logout') ?>"><i class="fa-solid fa-right-from-bracket mar-icon"></i>Log Out</a>
         </li>
-        
+        <?php else :?>
+        <li class="nav-item active">
+          <a class="nav-link active mar" href="<?= base_url('login') ?>"><i class="fa-solid fa-right-from-bracket mar-icon"></i>Log In</a>
+        </li>
+        <?php endif;?>
       </ul>
     </div>
   </div>
